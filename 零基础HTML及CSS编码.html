@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>零基础HTML编码</title>
+	<style type="text/css">
+		body,ul,dd,h1,h2,h3,p{
+			padding:0;
+			margin:0;
+		}
+		body{
+			font-family: "宋体";
+		}
+		nav{
+			height:60px;
+			width:100%;
+			background: #333333;
+			box-shadow: 0 2px 4px #c9c9c9;
+			line-height: 60px;	
+			clear: both;		
+		}
+		h1{
+			float: left;			 
+		}
+		h1 img{
+			vertical-align: middle;
+		}
+		nav ul{
+			float:right;
+			margin-right: 20px;
+		}
+		nav li{
+			width:78px;
+			display: inline-block;
+		}
+		nav li a{
+			text-decoration: none;
+			color:white;
+			font-size: 14px;
+		}
+		#wrap{
+			background: #dedede;
+			padding:20px;
+		}
+		section{
+			padding:34px 20px;
+			background: #ffffff;
+			margin-bottom: 20px;
+			box-shadow: 2px 2px 2px #848484;
+			
+		}
+		section h2{
+			font-weight: bold;
+		}
+		section h3{
+			margin:20px 0 16px 0;
+			color: #5f555e;
+		}
+		section span{
+			font-size: 12px;
+			color: #a39f9e;
+		}
+		section p{
+			font-size:14px;
+			text-indent: 2em;
+			line-height: 2.0;
+			margin:10px 0;
+		}
+		section a{
+			color:#5e54d7;
+		}
+		section ul{
+			list-style:none;
+			padding-left: 20px;
+		}
+		section ul li{
+			margin-top: 10px;
+			
+		}
+		section dl{
+			padding:10px;
+			width:200px;
+			text-align: center;
+			border:1px solid #cecece;
+			box-shadow: 0 0 2px #d9d9d9;
+		}
+		section dl img{
+			margin-top:10px;
+		}
+		section ol{
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		section .declare{
+			text-indent: 0;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: normal;
+			margin:0;
+		}
+		section table{
+			width:100%;
+			border:1px solid #ccc;
+			border-spacing:none;
+			border-collapse:collapse;
+		}
+		section th{
+			background: #333333;
+			color:white;
+			text-align: left;
+			height: 24px;
+			font-size: 14px;
+			font-weight: bold;
+			padding-left: 10px;
+		}
+		section td{
+			height: 24px;
+			line-height: 24px;
+			padding-left: 10px;
+		}
+		section .end td{
+			background: #cccccc;
+			font-weight: bold;
+		}
+		.end-section{
+			padding-top:15px;
+		}
+		.end-section .sidebar{
+			border-left: 4px solid #cacaca;
+			padding: 10px;
+		}
+		.end-section form{
+			margin-left: 286px;
+			margin-top: 24px;		
+		}
+		.end-section form input{
+			margin-bottom: 10px;
+		}
+		.end-section form p{
+			text-indent: 0;
+			padding-left:120px;
+			color:#aaa;
+			line-height: normal;
+			margin:0;
+		}
+		.end-section form .pwd{
+			display: block;
+			padding-left:28px;
+			margin-top: 24px;
+		}
+		.end-section form .ins{
+			margin-left: 72px;
+			margin-top: 10px;
+		}
+		.end-section form  label{
+			font-size: 14px;
+		}
+		.end-section form .top{
+			margin-top: 20px;
+		}
+		.end-section form .description{
+			margin-left: 46px;
+		}
+		textarea{
+			vertical-align: top;
+			width:764px;
+			height: 94px;
+		}
+		.end-section .sub{
+		    margin-top: 12px;
+		    width: 100%;
+		    text-align: center;
+		    line-height: 40px;
+		    display: inline-block;
+		    color: white;
+		    background-color: #3355d0;
+		    border-radius: 8px;
+		    text-decoration: none;
+		}
+		footer{
+		    padding: 10px;
+		    text-align: center;
+		    color: white;
+		    background-color: #111;
+		}
+		footer p{
+			padding:10px 0;
+			font-size: 14px;
+		}
+		.checkboxone input[type=radio]:checked +label {
+   			 background-color: blue;
+		}
+		.checkboxone label {
+		    position: absolute;
+		    width: 14px;
+		    height: 14px;
+		    border-radius: 100%;
+		    transition: all .5s ease;
+		    cursor: pointer;
+		    top: 3px;
+		    left: 3px;
+		    z-index: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<h1>
+			<a href="###">
+				<img src="images/logo.jpg">
+			</a>
+		</h1>
+		<ul>
+			<li><a href="###">导航链接一</a></li>
+			<li><a href="###">导航链接二</a></li>
+			<li><a href="###">导航链接三</a></li>
+			<li><a href="###">导航链接四</a></li>
+		</ul>
+	</nav>	
+	<div id="wrap">
+		<section>
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+				<span>文章作者</span>	<span>文章发表的时间</span>
+			<p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,,换行了，<br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落这是一个很长的段落,<a href="http://ife.baidu.com">这里有个连接到http://ife.baidu.com的连接</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,</p>
+				<img src="images/wu.jpg"><br>
+			<p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,,换行了，<br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落这是一个很长的段落,<a href="http://ife.baidu.com">这里有个连接到http://ife.baidu.com的连接</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,</p>
+		</section>
+		<section>
+			<h2>另一篇文章的一级标题</h2>
+			<h3>文章二级标题</h3>
+				<span>文章作者</span>	<span>文章发表的时间</span>
+			<p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,,换行了，<br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落这是一个很长的段落,<a href="http://ife.baidu.com">这里有个连接到http://ife.baidu.com的连接</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,</p>
+			<img src="images/wu.jpg"><br>
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		 </section>
+		 <section>
+			<h2>图片</h2>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"><br></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+			<dl>
+				<dt>好看的图片</dt>
+				<dd><img src="images/wu.jpg"></dd>
+			</dl>
+		  </section>
+		  <section>
+			<h2>最后一篇文章的一级标题</h2>
+			<h3>文章二级标题</h3>
+				<span>文章作者</span>	<span>文章发表的时间</span>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p class="declare">下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+			<table border="1">
+				<tr class="">
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="###">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="###">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="###">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="###">操作</a></td>
+				</tr>
+				<tr class="end">
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			 </table>		
+		  </section>
+		  <section class="end-section">
+				<h2 class="sidebar">这里以后是一个侧栏，这是侧栏的标题</h2>				
+				<form>
+					<label>
+						请输入邮箱地址
+						<input type="text" name="email" placeholder="email">				
+					</label>
+					<p>邮箱地址请按要求格式输入</p>
+					<label class="pwd">
+							请输入密码
+							<input type="password" placeholder="password">
+					</label>
+					<br>
+					<label>
+							请重复输入密码
+							<input type="password" placeholder="password" maxlength="16">
+					</label>
+						<p>密码为6-16位的英文数字</p>
+					<div class="ins top checkboxone">
+						<label>
+						性别
+							<input type="radio" name="sex">男
+							<input type="radio" name="sex">女
+						</label>
+					</div>
+					<div class="ins">
+						<label>
+						城市
+							<select>
+								<option>北京</option>
+								<option>上海</option>
+								<option>深圳</option>
+							</select>
+						</label>
+					</div>
+					<div class="ins">
+						<label>
+						爱好
+							<input type="checkbox" name="sport">运动
+							<input type="checkbox" name="art">艺术
+							<input type="checkbox" name="science">科学
+						</label>
+					</div>
+					<div class="description">
+						<label>
+							个人描述
+							<textarea></textarea>
+						</label>
+					</div>					
+				</form>	
+				<a href="###" class="sub">确认提交</a>
+			</section>	
+		</div>	
+	<footer>
+		<p>版权所有&copy;</p>
+	</footer>
+</body>
+</html>
