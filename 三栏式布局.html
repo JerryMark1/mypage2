@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style type="text/css">
+		body{
+			padding:0;
+			margin:0;
+		}
+		h3{
+			font-size: 16px;
+			margin:10px 0;
+		}
+		body{
+			font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		}
+		.wrap,article,.cont-left,.cont-right{
+			padding:20px;
+			border:1px solid #999;
+		}
+		article,.cont-left,.cont-right{
+			background-color: white;
+		}
+		div{
+			box-sizing: border-box;
+		}
+		.wrap{
+			background-color: #eee;
+		}
+		.clearfix{
+			*zoom:1;
+		}
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear: both;
+			overflow: hidden;
+			height: 0;
+		}
+		.cont-main{
+			float:left;
+			width:100%;
+		}
+		article{
+			word-wrap: break-word;
+			margin:0 140px 0 220px;
+		}
+		article .title{
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		article p{
+			line-height: 1.8em;
+			text-indent: 2em;
+		}
+		.cont-left{
+			float:left;
+			width:200px;
+			margin-left: -100%;
+		}
+		.cont-left .tempname{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 14px;
+			margin-left: 10px;
+		}
+		.cont-left img{
+			width: 80px;
+			height: 80px;
+			padding:2px;
+			border:1px solid #999;
+			box-shadow: 0 0 4px black;
+			display: inline-block;
+		}
+		.cont-right{
+			float:left;
+			width:120px;
+			margin-left:-120px;
+		}
+		.cont-right img{
+			width:74px;
+			padding:2px;
+			margin-bottom: 10px;
+			border:1px solid #999;
+			box-shadow: 0 0 4px black;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="cont-main">			
+			<article>
+				<h2 class="title">火大火大，生气火更大！！</h2>
+				<p>百度前端技术学院是由百度多模交互搜索部EFE团队、百度校园品牌部、百度校园招聘团队创建的面向大学生的前端技术学习平台百度前端技术学院是由百度多模交互搜索部EFE团队、百度校园品牌部、百度校园招聘团队创建的面向大学生的前端技术学习平台百度前端技术学院是由百度多模交互搜索部EFE团队、百度校园品牌部、百度校园招聘团队创建的面向大学生的前端技术学习平台</p>
+				<h3>资料</h3>
+				<p>
+					度前端技术学院是由百度多模交互搜索部EFE团队、百度校园品牌部、百度校园招聘团队创建的面向大学生的前端技术学习平台百度前端技术学院是由百度多模交互搜索部EFE团队、百度校园品牌部、百度校园招聘团队创建的面向大学生的前端技术学习平台百度前端技术学院是由百度多模交互搜索部EFE团
+				</p>
+			</article>
+		</div>
+		<div class="cont-left">
+			<img src="images/logo.jpg">
+			<h1 class="tempname">火大前端</h1>
+		</div>
+		<div class="cont-right">			
+				<img src="images/logo2.jpg">
+				<img src="images/logo2.jpg">
+				<img src="images/logo2.jpg">
+				<img src="images/logo2.jpg">				
+		</div>
+	</div>
+</body>
+</html>
