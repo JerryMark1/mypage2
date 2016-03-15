@@ -8,9 +8,13 @@
 			padding:0;
 			margin:0;
 		}
-		body{
-			font-family: "宋体";
+		 body{margin: 0;
+		  color: #333; 
+		  background-color: #eee; 
+		  font-family: "microsoft yahei"; 
+		  font-size: 12px;
 		}
+		/* 导航 */
 		nav{
 			height:60px;
 			width:100%;
@@ -20,10 +24,14 @@
 			clear: both;		
 		}
 		h1{
-			float: left;			 
+			float: left;
+			margin-left:10px;			 
+		}
+		h1 a{
+			display: inline-block;
 		}
 		h1 img{
-			vertical-align: middle;
+			height: 60px;
 		}
 		nav ul{
 			float:right;
@@ -34,6 +42,7 @@
 			display: inline-block;
 		}
 		nav li a{
+			display: inline-block;
 			text-decoration: none;
 			color:white;
 			font-size: 14px;
@@ -42,69 +51,73 @@
 			background: #dedede;
 			padding:20px;
 		}
-		section{
+		/*文章*/
+		aside{
 			padding:34px 20px;
 			background: #ffffff;
 			margin-bottom: 20px;
 			box-shadow: 2px 2px 2px #848484;
 			
 		}
-		section h2{
+		aside h2{
 			font-weight: bold;
 		}
-		section h3{
+		aside h3{
 			margin:20px 0 16px 0;
 			color: #5f555e;
 		}
-		section span{
+		aside span{
 			font-size: 12px;
 			color: #a39f9e;
 		}
-		section p{
+		aside p{
 			font-size:14px;
 			text-indent: 2em;
 			line-height: 2.0;
 			margin:10px 0;
 		}
-		section a{
+		aside a{
 			color:#5e54d7;
 		}
-		section ul{
+		aside ul{
 			list-style:none;
 			padding-left: 20px;
 		}
-		section ul li{
+		aside ul li{
 			margin-top: 10px;
 			
 		}
-		section dl{
+			/* 图片 */
+		aside dl{
 			padding:10px;
 			width:200px;
 			text-align: center;
 			border:1px solid #cecece;
 			box-shadow: 0 0 2px #d9d9d9;
 		}
-		section dl img{
+		aside dl img{
 			margin-top:10px;
 		}
-		section ol{
+		aside ol{
 			font-weight: bold;
 			margin-left: 20px;
 		}
-		section .declare{
+		
+		/* 表格 */
+		aside table{
+			width:100%;
+			border:1px solid #ccc;
+			border-spacing:none;
+			border-collapse:collapse;
+		}
+		aside .declare{
 			text-indent: 0;
 			font-size: 14px;
 			font-weight: bold;
 			line-height: normal;
 			margin:0;
 		}
-		section table{
-			width:100%;
-			border:1px solid #ccc;
-			border-spacing:none;
-			border-collapse:collapse;
-		}
-		section th{
+		aside th{
 			background: #333333;
 			color:white;
 			text-align: left;
@@ -113,60 +126,31 @@
 			font-weight: bold;
 			padding-left: 10px;
 		}
-		section td{
+		aside td{
 			height: 24px;
 			line-height: 24px;
 			padding-left: 10px;
 		}
-		section .end td{
+		aside .end td{
 			background: #cccccc;
 			font-weight: bold;
 		}
-		.end-section{
+
+		/* 侧边栏 */
+		.end-aside{
 			padding-top:15px;
 		}
-		.end-section .sidebar{
+		.end-aside .sidebar{
 			border-left: 4px solid #cacaca;
 			padding: 10px;
 		}
-		.end-section form{
-			margin-left: 286px;
+		.end-aside form{
 			margin-top: 24px;		
 		}
-		.end-section form input{
-			margin-bottom: 10px;
-		}
-		.end-section form p{
-			text-indent: 0;
-			padding-left:120px;
-			color:#aaa;
-			line-height: normal;
-			margin:0;
-		}
-		.end-section form .pwd{
-			display: block;
-			padding-left:28px;
-			margin-top: 24px;
-		}
-		.end-section form .ins{
-			margin-left: 72px;
-			margin-top: 10px;
-		}
-		.end-section form  label{
-			font-size: 14px;
-		}
-		.end-section form .top{
-			margin-top: 20px;
-		}
-		.end-section form .description{
-			margin-left: 46px;
-		}
-		textarea{
-			vertical-align: top;
-			width:764px;
-			height: 94px;
-		}
-		.end-section .sub{
+		.end-aside form input{
+			outline: none;
+		}		
+		.end-aside .sub{
 		    margin-top: 12px;
 		    width: 100%;
 		    text-align: center;
@@ -177,57 +161,63 @@
 		    border-radius: 8px;
 		    text-decoration: none;
 		}
+		.end-aside form .input-title{
+			    width: 40%;
+			    display: inline-block;
+			    /*vertical-align: top;*/
+			    text-align: right;
+			    margin-right: 10px;
+		}
+		.end-aside form .input-tip{
+			margin-left: 39%;
+			
+		}
+		.end-aside form >div{
+			margin:10px 0;
+		}
+		.end-aside form textarea{
+			vertical-align: top;
+			height: 50px;
+			width:400px;
+		}
+		/* 尾部 */
 		footer{
-		    padding: 10px;
+		    padding: 20px;
 		    text-align: center;
 		    color: white;
 		    background-color: #111;
 		}
-		footer p{
-			padding:10px 0;
-			font-size: 14px;
-		}
-		.checkboxone input[type=radio]:checked +label {
-   			 background-color: blue;
-		}
-		.checkboxone label {
-		    position: absolute;
-		    width: 14px;
-		    height: 14px;
-		    border-radius: 100%;
-		    transition: all .5s ease;
-		    cursor: pointer;
-		    top: 3px;
-		    left: 3px;
-		    z-index: 1;
-		}
+		
+		
 
 	</style>
 </head>
 <body>
-	<nav>
-		<h1>
-			<a href="###">
-				<img src="images/logo.jpg">
-			</a>
-		</h1>
-		<ul>
-			<li><a href="###">导航链接一</a></li>
-			<li><a href="###">导航链接二</a></li>
-			<li><a href="###">导航链接三</a></li>
-			<li><a href="###">导航链接四</a></li>
-		</ul>
-	</nav>	
+	<header>
+		<nav>
+			<h1>
+				<a href="###">
+					<img src="images/logo.jpg">
+				</a>
+			</h1>
+			<ul>
+				<li><a href="###">导航链接一</a></li>
+				<li><a href="###">导航链接二</a></li>
+				<li><a href="###">导航链接三</a></li>
+				<li><a href="###">导航链接四</a></li>
+			</ul>
+		</nav>	
+	</header>
 	<div id="wrap">
-		<section>
+		<aside>
 			<h2>文章一级标题</h2>
 			<h3>文章二级标题</h3>
 				<span>文章作者</span>	<span>文章发表的时间</span>
 			<p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,,换行了，<br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落这是一个很长的段落,<a href="http://ife.baidu.com">这里有个连接到http://ife.baidu.com的连接</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,</p>
 				<img src="images/wu.jpg"><br>
 			<p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,,换行了，<br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落这是一个很长的段落,<a href="http://ife.baidu.com">这里有个连接到http://ife.baidu.com的连接</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,</p>
-		</section>
-		<section>
+		</aside>
+		<aside>
 			<h2>另一篇文章的一级标题</h2>
 			<h3>文章二级标题</h3>
 				<span>文章作者</span>	<span>文章发表的时间</span>
@@ -238,8 +228,8 @@
 				<li>列表项目二</li>
 				<li>列表项目三</li>
 			</ul>
-		 </section>
-		 <section>
+		 </aside>
+		 <aside>
 			<h2>图片</h2>
 			<dl>
 				<dt>好看的图片</dt>
@@ -273,8 +263,8 @@
 				<dt>好看的图片</dt>
 				<dd><img src="images/wu.jpg"></dd>
 			</dl>
-		  </section>
-		  <section>
+		  </aside>
+		  <aside>
 			<h2>最后一篇文章的一级标题</h2>
 			<h3>文章二级标题</h3>
 				<span>文章作者</span>	<span>文章发表的时间</span>
@@ -315,62 +305,63 @@
 					<td colspan="2">1000</td>
 				</tr>
 			 </table>		
-		  </section>
-		  <section class="end-section">
+		  </aside>
+		  <aside class="end-aside">
 				<h2 class="sidebar">这里以后是一个侧栏，这是侧栏的标题</h2>				
 				<form>
-					<label>
-						请输入邮箱地址
-						<input type="text" name="email" placeholder="email">				
-					</label>
-					<p>邮箱地址请按要求格式输入</p>
-					<label class="pwd">
-							请输入密码
-							<input type="password" placeholder="password">
-					</label>
-					<br>
-					<label>
-							请重复输入密码
-							<input type="password" placeholder="password" maxlength="16">
-					</label>
-						<p>密码为6-16位的英文数字</p>
-					<div class="ins top checkboxone">
-						<label>
-						性别
-							<input type="radio" name="sex">男
-							<input type="radio" name="sex">女
-						</label>
+					<div>
+						<label class="input-title" for="email">请输入邮箱地址</label>
+						<input type="text" name="email" placeholder="email" id="email">	
 					</div>
-					<div class="ins">
-						<label>
-						城市
-							<select>
-								<option>北京</option>
-								<option>上海</option>
-								<option>深圳</option>
+					<p class="input-tip">邮箱地址请按要求格式输入</p>
+					<div>
+						<label class="input-title" for="password">请输入密码</label>
+						<input type="password"  placeholder="password" id="password">	
+					</div>			
+					<div>
+						<label class="input-title" for="pass">请重复输入密码</label>
+						<input type="password"  placeholder="password" id="pass">	
+					</div>
+					<p class="input-tip">密码为6-16位的英文数字</p>					
+					<div>						
+						<div class="input-title">性别</div>						
+							<label>
+								<input type="radio" name="sex">男
+							</label>
+							<label>
+								<input type="radio" name="sex">女
+							</label>											
+					</div>
+					<div>
+						<div class="input-title">城市</div>	
+							<select name="city">
+								<option value="beijing">北京</option>
+								<option value="上海">上海</option>
+								<option value="深圳">深圳</option>
 							</select>
-						</label>
 					</div>
-					<div class="ins">
+					<div>
+						<div class="input-title">爱好</div>	
 						<label>
-						爱好
 							<input type="checkbox" name="sport">运动
-							<input type="checkbox" name="art">艺术
-							<input type="checkbox" name="science">科学
 						</label>
-					</div>
-					<div class="description">
 						<label>
-							个人描述
-							<textarea></textarea>
+							<input type="checkbox" name="art">艺术
 						</label>
+						<label>
+							<input type="checkbox" name="science">科学
+						</label>						
+					</div>
+					<div>
+						<label class="input-title">个人描述</label>
+						<textarea></textarea>						
 					</div>					
 				</form>	
 				<a href="###" class="sub">确认提交</a>
-			</section>	
+			</aside>	
 		</div>	
 	<footer>
-		<p>版权所有&copy;</p>
+		版权所有&copy;
 	</footer>
 </body>
 </html>
