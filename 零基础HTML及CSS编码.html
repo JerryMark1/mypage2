@@ -175,11 +175,84 @@
 		.end-aside form >div{
 			margin:10px 0;
 		}
+		.end-aside form >div>span{
+
+			display: inline-block;
+			vertical-align: top;
+		}
 		.end-aside form textarea{
 			vertical-align: top;
 			height: 50px;
 			width:400px;
 		}
+		input[type=radio]{
+				visibility: hidden;
+			}
+		input[type=checkbox]{
+			visibility: hidden;
+		}
+		.checkboxone{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background-color: white;
+			border-radius: 100%;
+			border:1px solid #999;
+			position: relative;
+		}
+		.checkboxone label{
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border-radius: 100%;
+			transition: all .5s ease;
+			cursor:pointer;
+			top:3px;
+			left:3px;
+			z-index:1;
+
+		}
+		.checkboxone input[type=radio]:checked +label{
+			background-color: blue;
+		}
+		.checkboxthree {
+			width: 25px;
+			position: relative;
+			display: inline-block;
+		}
+		.checkboxthree label{
+			cursor: pointer;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 0;
+		  	left: 0;
+			background: white;
+			border:1px solid #ddd;
+		}
+
+		.checkboxthree label:after{
+			opacity: 0;
+			content: '';
+			position: absolute;
+			width: 9px;
+			height: 5px;
+			background: transparent;
+			top: 5px;
+			left: 5px;
+			border: 3px solid #333;
+			border-top: none;
+			border-right: none;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+		.checkboxthree input[type=checkbox]:checked +label:after{
+			opacity: 1;
+		}
+
 		/* 尾部 */
 		footer{
 		    padding: 20px;
@@ -322,16 +395,22 @@
 						<label class="input-title" for="pass">请重复输入密码</label>
 						<input type="password"  placeholder="password" id="pass">	
 					</div>
-					<p class="input-tip">密码为6-16位的英文数字</p>					
-					<div>						
-						<div class="input-title">性别</div>						
-							<label>
-								<input type="radio" name="sex">男
-							</label>
-							<label>
-								<input type="radio" name="sex">女
-							</label>											
-					</div>
+					<p class="input-tip">密码为6-16位的英文数字</p>	
+					<div>
+						<div class="input-title">性别</div>	
+						<div class="checkboxone">												
+							<input type="radio" name="sex" id="gender1">					
+							<label for="gender1"></label>
+						</div>
+							<span>男</span>
+						<div class="checkboxone">			
+							<input type="radio" name="sex" id="gender2">					
+							<label for="gender2"></label>	
+						</div>
+							<span>女</span>
+					</div>				
+														
+					
 					<div>
 						<div class="input-title">城市</div>	
 							<select name="city">
@@ -342,15 +421,21 @@
 					</div>
 					<div>
 						<div class="input-title">爱好</div>	
-						<label>
-							<input type="checkbox" name="sport">运动
-						</label>
-						<label>
-							<input type="checkbox" name="art">艺术
-						</label>
-						<label>
-							<input type="checkbox" name="science">科学
-						</label>						
+						<div class="checkboxthree">
+							<input type="checkbox" id="sport" name="sport">
+							<label for="sport"></label>							
+						</div>
+						运动
+						<div class="checkboxthree">
+							<input type="checkbox" id="sport1" name="sport">
+							<label for="sport1"></label>							
+						</div>
+						艺术
+						<div class="checkboxthree">
+							<input type="checkbox" id="sport2" name="sport">
+							<label for="sport2"></label>							
+						</div>
+						科学					
 					</div>
 					<div>
 						<label class="input-title">个人描述</label>
