@@ -202,7 +202,7 @@
 			background: #ffffff;			
 			box-shadow: 2px 2px 2px #848484;
 			
-			width:326px;
+			width:380px;
 		}
 		/* 自定义 */
 		input[type=radio]{
@@ -283,7 +283,7 @@
 		/* 当浏览器宽度大于750px */
 @media screen and (min-width: 750px){
 		article{
-			margin-right: 406px;
+			margin-right: 460px;
 			width:auto;
 		}
 		aside{
@@ -300,16 +300,9 @@
 }
 /* 当浏览器宽度小于750px */
 @media screen and ( max-width: 750px){
-		article{	
+		article,aside{	
 			width:95%;
 			padding:1%;
 			margin:20px auto 0px auto;
-		}
-		aside{
-			width:auto;
-			margin:20px auto 0px auto;
-		}
-		
-		
-		
+		}		
 }
